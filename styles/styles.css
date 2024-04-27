@@ -1,0 +1,47 @@
+
+/* Sidebar styling */
+.sidebar {
+  background-color: rgb(146, 190, 146);
+  width: 270px; /* Set the width to 100px */
+  position: fixed; /* Position the sidebar */
+  height: 100%; /* Set the height to 100% */
+}
+
+/* Sidebar link styling */
+.sidebar a {
+  display: block;
+  padding: 17px; /* Add padding to create space between options */
+  font-size: 25px; /* Increase font size */
+  color: white; /* Change text color */
+  text-decoration: none; /* Remove default underline */
+}
+
+/* Style for nested submenu links */
+.sidebar ul ul a {
+  padding-left: 28px; /* Add indentation for nested options */
+  font-size: 20px; /* Decrease font size for nested options */
+}
+
+/* Main content */
+.main-content {
+  margin-left: 100px; /* Adjust margin to accommodate the sidebar */
+}
+
+
+/* Navbar styling */
+.navbar {
+  height: 80px; /* Set the height of the navbar */
+  
+  
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  font-size: 28px; /* Increase font size of the brand */
+ 
+}
+
+/* Navbar text styling */
+.navbar-text {
+  font-size: 23px; /* Increase font size of the text */
+}
