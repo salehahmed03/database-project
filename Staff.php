@@ -69,6 +69,42 @@ if ($result_data) {
                 </main>
             </div>
         </div>
+
+        <div class="container">
+    <h2>Raise</h2>
+    <form action="Controllers/SalaryRaise.php" method="post">
+        <div class="form-group">
+            <label for="Raise">Raise:</label>
+            <input type="number" class="form-control" name="Raise" id="Raise" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ID">ID:</label>
+            <input type="number" class="form-control" name="ID" id="ID" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Salary Raise</button>
+    </form>
+</div>
+
+<div class="container mt-5">
+    <h2>Deduction</h2>
+    <form action="Controllers/SalaryDeduction.php" method="post">
+        <div class="form-group">
+            <label for="Raise">Deduction</label>
+            <input type="number" class="form-control" name="Deduction" id="Deduction" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ID">ID:</label>
+            <input type="number" class="form-control" name="ID" id="ID" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Salary Deduction</button>
+    </form>
+</div>
+
+
     </body>
     </html>
     <?php

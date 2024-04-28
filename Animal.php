@@ -73,8 +73,8 @@ if ($result_data) {
         </div>
 
     </div>
-    <div class="container">
-        <h2>Add Animal Form</h2>
+    <div class="container mt-5">
+        <h2>Add Info Form</h2>
         <form action="Controllers/Addanimal.php" method="post">
             <div class="form-group">
                 <label for="Animal_Name">Animal Name:</label>

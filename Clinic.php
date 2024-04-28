@@ -69,7 +69,7 @@ if ($result_data) {
                 </main>
             </div>
         </div>
-        <?php include 'include/GenerateFields.php' ?>
+        
     </body>
     </html>
     <?php
