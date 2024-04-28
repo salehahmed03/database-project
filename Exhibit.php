@@ -101,40 +101,6 @@ if ($result_data) {
         </form>
     </div>
     <div class="container mt-5 mb-5">
-        <h2>Create Exhibit</h2>
-        <form action="Controllers/CreateExhibit.php" method="post">
-            <div class="form-group">
-                <label for="Exhibit_Name">Exhibit Name:</label>
-                <input type="text" class="form-control" id="Exhibit_Name" name="Exhibit_Name">
-            </div>
-            <div class="form-group">
-                <label for="Capacity">Capacity:</label>
-                <input type="number" class="form-control" id="Capacity" name="Capacity">
-            </div>
-            <div class="form-group">
-                <label for="Theme">Theme:</label>
-                <input type="text" class="form-control" id="Theme" name="Theme">
-            </div>
-            <div class="form-group">
-                <label for="Location">Location:</label>
-                <input type="text" class="form-control" id="Location" name="Location">
-            </div>
-            <div class="form-group">
-                <label for="Size">Size:</label>
-                <input type="text" class="form-control" id="Size" name="Size">
-            </div>
-            <div class="form-group">
-                <label for="Security_Level">Security Level:</label>
-                <input type="text" class="form-control" id="Security_Level" name="Security_Level">
-            </div>
-            <div class="form-group">
-                <label for="EManager_Id">Manager ID:</label>
-                <input type="number" class="form-control" id="EManager_Id" name="EManager_Id">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-    <div class="container mt-5 mb-5">
         <h2>Destroy Exhibit</h2>
         <form action="Controllers/DestroyExhibit.php" method="post">
             <div class="form-group">
