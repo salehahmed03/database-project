@@ -3,14 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  <!-- Include Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-  <!-- Include custom CSS -->
-  <link rel="stylesheet" href="styles/styles.css">
+  <title>Admin Panel</title>
+  <?php include 'include/scripts.php'; ?>
 </head>
 <body>
   <?php include 'include/navbar.php'; ?>
@@ -19,15 +13,32 @@
     <div class="row">
       <?php include 'include/sidebar.php'; ?>
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <div class="my-4">
+          <h2>Welcome to the Admin Panel</h2>
+          <p>This panel allows you to manage various aspects of your system. You can perform tasks such as managing users, viewing reports, and updating settings.</p>
+          <p>Please use the sidebar navigation to explore the different sections of the admin panel.</p>
+        </div>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Manage Users</h5>
+              <p class="card-text">Click here to manage user accounts, including creating, editing, and deleting users.</p>
+              <a href="#" class="btn btn-primary">Go to Users</a>
+            </div>
+          </div>
         
-
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Settings</h5>
+              <p class="card-text">Adjust system settings and configurations to meet your needs.</p>
+              <a href="#" class="btn btn-primary">Go to Settings</a>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   </div>
 
-  <!-- Include Bootstrap JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 </body>
 </html>

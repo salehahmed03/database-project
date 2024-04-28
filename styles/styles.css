@@ -11,15 +11,15 @@
 .sidebar a {
   display: block;
   padding: 17px; /* Add padding to create space between options */
-  font-size: 25px; /* Increase font size */
+  font-size: 20px; /* Increase font size */
   color: white; /* Change text color */
   text-decoration: none; /* Remove default underline */
 }
 
 /* Style for nested submenu links */
 .sidebar ul ul a {
-  padding-left: 28px; /* Add indentation for nested options */
-  font-size: 20px; /* Decrease font size for nested options */
+  padding-left: 23px; /* Add indentation for nested options */
+  font-size: 18px; /* Decrease font size for nested options */
 }
 
 /* Main content */
