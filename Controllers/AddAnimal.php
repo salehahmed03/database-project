@@ -1,6 +1,8 @@
 <?php
 // Include database connection file
 include '../include/db_connection.php';
+include '../include/scripts.php';
+
 
 // Check if form is submitted and all required fields are filled
 if (isset($_POST['Animal_Name'], $_POST['Gender'], $_POST['Habitat'], $_POST['General_Name'], $_POST['Genus'], $_POST['Species'], $_POST['Status'], $_POST['Diet_Type'], $_POST['Date_of_Birth'], $_POST['Exhibit_no'])) {
@@ -23,7 +25,11 @@ if (isset($_POST['Animal_Name'], $_POST['Gender'], $_POST['Habitat'], $_POST['Ge
 
     // Check if procedure execution was successful
     if ($result) {
-        echo "Animal added successfully!";
+        ?>
+        <div class="alert alert-success" role="alert">
+            Animal Added successfully!Return to table and refresh to see changes.
+        </div>
+        <?php
     } else {
         // Error handling
         $errors = sqlsrv_errors();

@@ -1,6 +1,8 @@
 <?php
 // Include database connection file
 include '../include/db_connection.php';
+include '../include/scripts.php';
+
 
 // Check if form is submitted and all required fields are filled
 if (isset($_POST['Raise'], $_POST['ID'])) {
@@ -15,7 +17,11 @@ if (isset($_POST['Raise'], $_POST['ID'])) {
 
     // Check if procedure execution was successful
     if ($result) {
-        echo "Salary raised successfully!";
+        ?>
+        <div class="alert alert-success" role="alert">
+            Salary raised !Return to table and refresh to see changes.
+        </div>
+        <?php
     } else {
         // Error handling
         $errors = sqlsrv_errors();

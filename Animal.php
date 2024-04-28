@@ -73,7 +73,7 @@ if ($result_data) {
         </div>
 
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <h2>Add Info Form</h2>
         <form action="Controllers/Addanimal.php" method="post">
             <div class="form-group">
@@ -127,6 +127,92 @@ if ($result_data) {
             </div>
 
             <button type="submit" class="btn btn-primary">Add Animal</button>
+        </form>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h2>Diagnose Animal Form</h2>
+        <form action="Controllers/DiagnoseAnimal.php" method="post">
+            <div class="form-group">
+                <label for="Animal_Id">Animal ID:</label>
+                <input type="number" class="form-control" name="Animal_Id" id="Animal_Id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Status">Status:</label>
+                <input type="text" class="form-control" name="Status" id="Status" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Diagnosis">Diagnosis:</label>
+                <input type="text" class="form-control" name="Diagnosis" id="Diagnosis" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Date_Diagnosed">Date Diagnosed:</label>
+                <input type="date" class="form-control" name="Date_Diagnosed" id="Date_Diagnosed" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Event_Type">Event Type:</label>
+                <input type="text" class="form-control" name="Event_Type" id="Event_Type" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Clinic_No">Clinic Number:</label>
+                <input type="number" class="form-control" name="Clinic_No" id="Clinic_No" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit Diagnosis</button>
+        </form>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h2>Transfer Animal Form</h2>
+        <form action="Controllers/TransferAnimal.php" method="post">
+            <div class="form-group">
+                <label for="Animal_ID">Animal ID:</label>
+                <input type="number" class="form-control" name="Animal_ID" id="Animal_ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Exhibit_no">Exhibit Number:</label>
+                <input type="number" class="form-control" name="Exhibit_no" id="Exhibit_no" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Transfer Animal</button>
+        </form>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h2>Treat Animal Form</h2>
+        <form action="Controllers/TreatAnimal.php" method="post">
+            <div class="form-group">
+                <label for="Animal_Id">Animal ID:</label>
+                <input type="number" class="form-control" name="Animal_Id" id="Animal_Id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Diagnosis">Diagnosis:</label>
+                <input type="text" class="form-control" name="Diagnosis" id="Diagnosis" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Treatment_Date">Treatment Date:</label>
+                <input type="date" class="form-control" name="Treatment_Date" id="Treatment_Date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Clinic_No">Clinic Number:</label>
+                <input type="number" class="form-control" name="Clinic_No" id="Clinic_No" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Event_Type">Event Type:</label>
+                <input type="text" class="form-control" name="Event_Type" id="Event_Type" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Treat Animal</button>
         </form>
     </div>
 

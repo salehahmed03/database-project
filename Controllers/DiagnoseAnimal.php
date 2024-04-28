@@ -3,22 +3,27 @@
 include '../include/db_connection.php';
 include '../include/scripts.php';
 
-// Check if form is submitted and all required fields are filled
-if (isset($_POST['Deduction'], $_POST['ID'])) {
-    // Fetch values from the form submission
-    $Deduction = $_POST['Deduction'];
-    $ID = $_POST['ID'];
 
-    // Execute the SalaryDeduction procedure with the provided inputs
-    $procedure_query = "EXEC SalaryDeduction @Deduction = ?, @ID = ?";
-    $params = array($Deduction, $ID);
+// Check if form is submitted and all required fields are filled
+if (isset($_POST['Animal_Id'], $_POST['Status'], $_POST['Diagnosis'], $_POST['Date_Diagnosed'], $_POST['Event_Type'], $_POST['Clinic_No'])) {
+    // Fetch values from the form submission
+    $Animal_Id = $_POST['Animal_Id'];
+    $Status = $_POST['Status'];
+    $Diagnosis = $_POST['Diagnosis'];
+    $Date_Diagnosed = $_POST['Date_Diagnosed'];
+    $Event_Type = $_POST['Event_Type'];
+    $Clinic_No = $_POST['Clinic_No'];
+
+    // Execute the DiagnoseAnimal procedure with the provided inputs
+    $procedure_query = "EXEC DiagnoseAnimal @Animal_Id = ?, @Status = ?, @Diagnosis = ?, @Date_Diagnosed = ?, @Event_Type = ?, @Clinic_No = ?";
+    $params = array($Animal_Id, $Status, $Diagnosis, $Date_Diagnosed, $Event_Type, $Clinic_No);
     $result = sqlsrv_query($conn, $procedure_query, $params);
 
     // Check if procedure execution was successful
     if ($result) {
         ?>
         <div class="alert alert-success" role="alert">
-            Salary Deducted !Return to table and refresh to see changes.
+            Animal diagnosed successfully!Return to table and refresh to see changes.
         </div>
         <?php
     } else {

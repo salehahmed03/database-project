@@ -1,24 +1,26 @@
+
 <?php
 // Include database connection file
 include '../include/db_connection.php';
 include '../include/scripts.php';
 
-// Check if form is submitted and all required fields are filled
-if (isset($_POST['Deduction'], $_POST['ID'])) {
-    // Fetch values from the form submission
-    $Deduction = $_POST['Deduction'];
-    $ID = $_POST['ID'];
 
-    // Execute the SalaryDeduction procedure with the provided inputs
-    $procedure_query = "EXEC SalaryDeduction @Deduction = ?, @ID = ?";
-    $params = array($Deduction, $ID);
+// Check if form is submitted and all required fields are filled
+if (isset($_POST['Animal_ID'], $_POST['Exhibit_no'])) {
+    // Fetch values from the form submission
+    $Animal_ID = $_POST['Animal_ID'];
+    $Exhibit_no = $_POST['Exhibit_no'];
+
+    // Execute the TransferAnimal procedure with the provided inputs
+    $procedure_query = "EXEC TransferAnimal @Animal_ID = ?, @Exhibit_no = ?";
+    $params = array($Animal_ID, $Exhibit_no);
     $result = sqlsrv_query($conn, $procedure_query, $params);
 
     // Check if procedure execution was successful
     if ($result) {
         ?>
         <div class="alert alert-success" role="alert">
-            Salary Deducted !Return to table and refresh to see changes.
+            Animal Transfered successfully!Return to table and refresh to see changes.
         </div>
         <?php
     } else {
