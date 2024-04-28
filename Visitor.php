@@ -70,6 +70,17 @@ if ($result_data) {
                 </main>
             </div>
         </div>
+        <div class="container">
+        <h2>Visitor Donations Form</h2>
+        <form action="Controllers/get_visitor_donations.php" method="post">
+            <div class="form-group">
+                <label for="visitor_ticket">Visitor Ticket:</label>
+                <input type="number" class="form-control" name="visitor_ticket" id="visitor_ticket" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Get Donations</button>
+        </form>
+    </div>
     </body>
     </html>
     <?php

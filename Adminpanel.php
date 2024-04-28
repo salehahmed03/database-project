@@ -7,11 +7,12 @@
   <?php include 'include/scripts.php'; ?>
 </head>
 <body>
-  <?php include 'include/navbar.php'; ?>
-  
-  <div class="container-fluid">
-    <div class="row">
-      <?php include 'include/sidebar.php'; ?>
+ 
+   <?php include 'include/navbar.php'; ?>
+    <?php include 'include/sidebar.php'; ?>
+
+<div class="content-container">
+  <div class="container">
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <div class="my-4">
           <h2>Welcome to the Admin Panel</h2>
@@ -36,9 +37,7 @@
           </div>
         </div>
       </main>
-    </div>
   </div>
-
-  
+</div>
 </body>
 </html>
