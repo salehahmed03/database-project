@@ -36,7 +36,7 @@ if ($result_data) {
                 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                     <h2>Donation Table</h2>
                     <div class="table-responsive">
-                        <table class="table table-bordered border-primary">
+                        <table class="table table-bordered border-primary mt-5">
                             <thead>
                                 <tr>
                                     <?php
