@@ -15,7 +15,7 @@
       <ul class="collapse list-unstyled" id="submenu2">
       <li><a href="Shop.php">Shops</a></li>
         <li><a href="Sponsor.php">Sponsors</a></li>
-        <li><a href="Sponsorship_Area_Aqcuired.php">Sponsors Area</a></li>
+        <li><a href="Sponsor_Area_Aqcuired.php">Sponsors Area</a></li>
       </ul>
   
     <li><a href="Animal.php">Animals</a></li>

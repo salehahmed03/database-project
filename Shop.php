@@ -71,7 +71,7 @@ if ($result_data) {
         </div>
     </body>
     </html>
-    <?php include 'include/GenerateFields.php' ?>
+   
     <?php
 } else {
     // Error handling

@@ -3,7 +3,7 @@
 include 'include/db_connection.php';
 
 // Fetch column names from Staff table
-$query_columns = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'Sponsor_Area_Aqcuired'";
+$query_columns = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'Sponsor_Area_Acquired'";
 $result_columns = sqlsrv_query($conn, $query_columns);
 $columns = array();
 if ($result_columns) {
@@ -12,8 +12,8 @@ if ($result_columns) {
     }
 }
 
-// Fetch data from Staff table
-$query_data = "SELECT * FROM Sponsor_Area_Aqcuired";
+// Fetch data from Staff table Sponsor_Area_Acquired
+$query_data = "SELECT * FROM Sponsor_Area_Acquired";
 $result_data = sqlsrv_query($conn, $query_data);
 
 // Check if query executed successfully
@@ -73,8 +73,16 @@ if ($result_data) {
     </html>
     <?php
 } else {
-    // Error handling
-    echo "Error: " . sqlsrv_errors();
+    $errors = sqlsrv_errors();
+    if ($errors !== null) {
+        foreach ($errors as $error) {
+            echo "SQLSTATE: " . $error['SQLSTATE'] . "<br />";
+            echo "Code: " . $error['code'] . "<br />";
+            echo "Message: " . $error['message'] . "<br />";
+        }
+    } else {
+        echo "Unknown error occurred.";
+    }
 }
 
 // Close database connection

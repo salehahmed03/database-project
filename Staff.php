@@ -70,7 +70,7 @@ if ($result_data) {
             </div>
         </div>
 
-        <div class="container">
+        <div class="container mt-5 mb-5">
     <h2>Raise</h2>
     <form action="Controllers/SalaryRaise.php" method="post">
         <div class="form-group">
@@ -87,7 +87,7 @@ if ($result_data) {
     </form>
 </div>
 
-<div class="container mt-5">
+<div class="container mt-5 mb-5">
     <h2>Deduction</h2>
     <form action="Controllers/SalaryDeduction.php" method="post">
         <div class="form-group">
