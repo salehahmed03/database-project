@@ -1,4 +1,12 @@
 <?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Include the script to add the animal
+    include 'Controllers/AddShop.php';
+
+    // Redirect to the same page to prevent form resubmission
+    header('Location: Shop.php');
+    exit;
+}
 // Include database connection file
 include 'include/db_connection.php';
 
@@ -54,7 +62,7 @@ if ($result_data) {
                                     echo "<tr>";
                                     foreach ($row as $key => $value) {
                                         if ($value instanceof DateTime) {
-                                            // Format DateTime object before outputting
+                                            
                                             echo "<td>" . $value->format('Y-m-d H:i:s') . "</td>";
                                         } else {
                                             echo "<td>$value</td>";
@@ -71,6 +79,33 @@ if ($result_data) {
         </div>
     </body>
     </html>
+
+    <div class="container mt-5 mb-5">
+        <h2>Add Shop Form</h2>
+        <form action="Controllers/AddShop.php" method="post">
+            <div class="form-group">
+                <label for="Shop_Name">Shop Name:</label>
+                <input type="text" class="form-control" name="Shop_Name" id="Shop_Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Location">Location:</label>
+                <input type="text" class="form-control" name="Location" id="Location" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Product_Category">Product Category:</label>
+                <input type="text" class="form-control" name="Product_Category" id="Product_Category" required>
+            </div>
+
+            <div class="form-group">
+                <label for="SManager_Id">Store Manager ID:</label>
+                <input type="number" class="form-control" name="SManager_Id" id="SManager_Id" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Shop</button>
+        </form>
+    </div>
    
     <?php
 } else {

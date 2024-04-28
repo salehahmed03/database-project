@@ -75,7 +75,7 @@ if ($result_data) {
     </div>
     <div class="container mt-5 mb-5">
         <h2>Add Info Form</h2>
-        <form action="Controllers/Addanimal.php" method="post">
+        <form action="Controllers/AddAnimal.php" method="post">
             <div class="form-group">
                 <label for="Animal_Name">Animal Name:</label>
                 <input type="text" class="form-control" name="Animal_Name" id="Animal_Name" required>

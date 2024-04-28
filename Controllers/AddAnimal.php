@@ -25,11 +25,9 @@ if (isset($_POST['Animal_Name'], $_POST['Gender'], $_POST['Habitat'], $_POST['Ge
 
     // Check if procedure execution was successful
     if ($result) {
-        ?>
-        <div class="alert alert-success" role="alert">
-            Animal Added successfully!Return to table and refresh to see changes.
-        </div>
-        <?php
+        header("Location:../Animal.php");
+        exit();
+    
     } else {
         // Error handling
         $errors = sqlsrv_errors();

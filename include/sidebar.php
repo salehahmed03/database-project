@@ -13,7 +13,7 @@
     <li>
       <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Shops</a>
       <ul class="collapse list-unstyled" id="submenu2">
-      <li><a href="Shop.php">Shops</a></li>
+      <li><a href="Shop.php">Shops Available</a></li>
         <li><a href="Sponsor.php">Sponsors</a></li>
         <li><a href="Sponsor_Area_Aqcuired.php">Sponsors Area</a></li>
       </ul>
