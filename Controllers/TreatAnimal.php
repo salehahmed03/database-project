@@ -19,11 +19,9 @@ if (isset($_POST['Animal_Id'], $_POST['Diagnosis'], $_POST['Treatment_Date'], $_
 
     // Check if procedure execution was successful
     if ($result) {
-        ?>
-        <div class="alert alert-success" role="alert">
-            Animal Treated successfully!Return to table and refresh to see changes.
-        </div>
-        <?php
+        header("Location:../Animal.php");
+        exit();
+    
     } else {
         // Error handling
         $errors = sqlsrv_errors();

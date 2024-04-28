@@ -71,6 +71,49 @@ if ($result_data) {
         </div>
     </body>
     </html>
+    <div class="container mt-5 mb-5">
+    <h2>Add Sponsor</h2>
+    <form action="Controllers/AddSponsor.php" method="POST">
+        <div class="form-group">
+            <label for="Sponsor_Name">Sponsor Name:</label>
+            <input type="text" class="form-control" id="Sponsor_Name" name="Sponsor_Name" required>
+        </div>
+        <div class="form-group">
+            <label for="Email">Email:</label>
+            <input type="email" class="form-control" id="Email" name="Email" required>
+        </div>
+        <div class="form-group">
+            <label for="Start_Date">Start Date:</label>
+            <input type="date" class="form-control" id="Start_Date" name="Start_Date" required>
+        </div>
+        <div class="form-group">
+            <label for="End_Date">End Date:</label>
+            <input type="date" class="form-control" id="End_Date" name="End_Date" required>
+        </div>
+        <div class="form-group">
+            <label for="Shop_Name">Shop Name:</label>
+            <input type="text" class="form-control" id="Shop_Name" name="Shop_Name">
+        </div>
+        <div class="form-group">
+            <label for="Location">Location:</label>
+            <input type="text" class="form-control" id="Location" name="Location">
+        </div>
+        <div class="form-group">
+            <label for="Product_Category">Product Category:</label>
+            <input type="text" class="form-control" id="Product_Category" name="Product_Category">
+        </div>
+        <div class="form-group">
+            <label for="SManager_Id">Manager ID:</label>
+            <input type="number" class="form-control" id="SManager_Id" name="SManager_Id">
+        </div>
+        <div class="form-group">
+            <label for="Phone_Number">Phone Number:</label>
+            <input type="number" class="form-control" id="Phone_Number" name="Phone_Number"  placeholder="Format: 1234567890">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Sponsor</button>
+    </form>
+</div>
+
     <?php
 } else {
     // Error handling
