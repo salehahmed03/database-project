@@ -1,47 +1,49 @@
-
 /* Sidebar styling */
 .sidebar {
   background-color: rgb(146, 190, 146);
-  width: 270px; /* Set the width to 100px */
-  position: fixed; /* Position the sidebar */
-  height: 100%; /* Set the height to 100% */
+  height: 100%;
+  width: 290px;
+  position: fixed; /* Change position to fixed */
+  top: 80px; /* Set the top position to accommodate the navbar height */
+  bottom: 0; /* Set bottom to 0 to fill the remaining space */
+  overflow-y: auto; /* Add scrollbar if content overflows vertically */
 }
 
 /* Sidebar link styling */
 .sidebar a {
   display: block;
-  padding: 17px; /* Add padding to create space between options */
-  font-size: 20px; /* Increase font size */
-  color: white; /* Change text color */
-  text-decoration: none; /* Remove default underline */
+  padding: 17px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
 }
 
 /* Style for nested submenu links */
 .sidebar ul ul a {
-  padding-left: 23px; /* Add indentation for nested options */
-  font-size: 18px; /* Decrease font size for nested options */
+  padding-left: 23px;
+  font-size: 18px;
+}
+.sidebar-item {
+  margin-top: 10px;
 }
 
 /* Main content */
 .main-content {
-  margin-left: 100px; /* Adjust margin to accommodate the sidebar */
+  margin-top: 80px; /* Adjust margin to accommodate the navbar */
+  margin-left: 0; /* Remove the left margin */
 }
-
 
 /* Navbar styling */
 .navbar {
-  height: 80px; /* Set the height of the navbar */
-  
-  
+  height: 80px;
 }
 
 /* Navbar brand styling */
 .navbar-brand {
-  font-size: 28px; /* Increase font size of the brand */
- 
+  font-size: 28px;
 }
 
 /* Navbar text styling */
 .navbar-text {
-  font-size: 23px; /* Increase font size of the text */
+  font-size: 23px;
 }

@@ -17,6 +17,7 @@ if ($result_columns) {
 $query_data = "SELECT * FROM Animal";
 $result_data = sqlsrv_query($conn, $query_data);
 
+
 // Check if query executed successfully
 if ($result_data) {
     ?>
@@ -37,7 +38,7 @@ if ($result_data) {
                 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                     <h2>Animal Table</h2>
                     <div class="table-responsive">
-                        <table class="table table-bordered border-primary">
+                        <table class="table table-bordered border-primary mt-5">
                             <thead>
                                 <tr>
                                     <?php
@@ -70,9 +71,70 @@ if ($result_data) {
                 </main>
             </div>
         </div>
+
+    </div>
+    <div class="container">
+        <h2>Add Animal Form</h2>
+        <form action="Controllers/Addanimal.php" method="post">
+            <div class="form-group">
+                <label for="Animal_Name">Animal Name:</label>
+                <input type="text" class="form-control" name="Animal_Name" id="Animal_Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Gender">Gender:</label>
+                <input type="text" class="form-control" name="Gender" id="Gender" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Habitat">Habitat:</label>
+                <input type="text" class="form-control" name="Habitat" id="Habitat" required>
+            </div>
+
+            <div class="form-group">
+                <label for="General_Name">General Name:</label>
+                <input type="text" class="form-control" name="General_Name" id="General_Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Genus">Genus:</label>
+                <input type="text" class="form-control" name="Genus" id="Genus" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Species">Species:</label>
+                <input type="text" class="form-control" name="Species" id="Species" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Status">Status:</label>
+                <input type="text" class="form-control" name="Status" id="Status" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Diet_Type">Diet Type:</label>
+                <input type="text" class="form-control" name="Diet_Type" id="Diet_Type" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Date_of_Birth">Date of Birth:</label>
+                <input type="date" class="form-control" name="Date_of_Birth" id="Date_of_Birth" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Exhibit_no">Exhibit Number:</label>
+                <input type="number" class="form-control" name="Exhibit_no" id="Exhibit_no" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Animal</button>
+        </form>
+    </div>
+
+
     </body>
     </html>
     <?php
+
 } else {
     // Error handling
     echo "Error: " . sqlsrv_errors();
@@ -81,3 +143,4 @@ if ($result_data) {
 // Close database connection
 sqlsrv_close($conn);
 ?>
+

@@ -1,7 +1,7 @@
 
 <div class="sidebar">
   <ul class="list-unstyled">
-    <li><a href="Staff.php">Staff</a></li>
+    <li class="sidebar-item"><a href="Staff.php">Staff</a></li>
     <li><a href="Clinic.php">Clinic</a></li>
     <li>
       <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Visitors</a>
