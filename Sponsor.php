@@ -66,12 +66,7 @@ if ($result_data) {
                             </tbody>
                         </table>
                     </div>
-                </main>
-            </div>
-        </div>
-    </body>
-    </html>
-    <div class="container mt-5 mb-5">
+                    <div class="container mt-5 mb-5">
     <h2>Add Sponsor</h2>
     <form action="Controllers/AddSponsor.php" method="POST">
         <div class="form-group">
@@ -113,6 +108,22 @@ if ($result_data) {
         <button type="submit" class="btn btn-primary">Add Sponsor</button>
     </form>
 </div>
+<div class="container mt-5 mb-5">
+    <h2>Cancel Sponsor</h2>
+    <form action="Controllers/CancelSponsor.php" method="post">
+        <div class="form-group">
+            <label for="SponsorId">Sponsor ID:</label>
+            <input type="number" class="form-control" name="SponsorId" id="SponsorId" required>
+        </div>
+        <button type="submit" class="btn btn-danger">Cancel Sponsor</button>
+    </form>
+</div>
+                </main>
+            </div>
+        </div>
+    </body>
+    </html>
+    
 
     <?php
 } else {

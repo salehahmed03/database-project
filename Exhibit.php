@@ -115,7 +115,7 @@ if ($result_data) {
         </form>
     </div>
     <div class="container mt-5 mb-5">
-        <h2>Exhibit Animals Form</h2>
+        <h2>Exhibit Animals</h2>
         <form action="Controllers/get_exhibit_animals.php" method="post">
             <div class="form-group">
                 <label for="exhibit_no">Exhibit Number:</label>

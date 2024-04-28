@@ -67,10 +67,7 @@ if ($result_data) {
                             </tbody>
                         </table>
                     </div>
-                </main>
-            </div>
-        </div>
-        <div class="container">
+                    <div class="container">
         <h2>Visitor Donations Form</h2>
         <form action="Controllers/get_visitor_donations.php" method="post">
             <div class="form-group">
@@ -81,6 +78,10 @@ if ($result_data) {
             <button type="submit" class="btn btn-primary">Get Donations</button>
         </form>
     </div>
+                </main>
+            </div>
+        </div>
+        
     </body>
     </html>
     <?php
