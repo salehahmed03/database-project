@@ -3,7 +3,7 @@
 include 'include/db_connection.php';
 
 // Fetch column names from Staff table
-$query_columns = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'Clinic'";
+$query_columns = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'Goes_To'";
 $result_columns = sqlsrv_query($conn, $query_columns);
 $columns = array();
 if ($result_columns) {
@@ -13,7 +13,7 @@ if ($result_columns) {
 }
 
 // Fetch data from Staff table
-$query_data = "SELECT * FROM Clinic";
+$query_data = "SELECT * FROM Goes_To";
 $result_data = sqlsrv_query($conn, $query_data);
 
 // Check if query executed successfully
@@ -66,34 +66,25 @@ if ($result_data) {
                             </tbody>
                         </table>
                     </div>
-                    <div class="container mt-5 mb-5">
-        <h2>Add Clinic</h2>
-        <form action="Controllers/AddClinic.php" method="post">
+                    
+        <div class="container mt-5 mb-5">
+        <h2>Add Clinic Event</h2>
+        <form action="Controllers/AddClinicEvent.php" method="post">
             <div class="form-group">
-                <label for="Location">Location:</label>
-                <input type="text" class="form-control" id="Location" name="Location">
+                <label for="AnimalId">Animal ID:</label>
+                <input type="number" class="form-control" id="AnimalId" name="AnimalId">
             </div>
             <div class="form-group">
-                <label for="Capacity">Capacity:</label>
-                <input type="number" class="form-control" id="Capacity" name="Capacity">
+                <label for="ClinicId">Clinic ID:</label>
+                <input type="number" class="form-control" id="ClinicId" name="ClinicId">
             </div>
             <div class="form-group">
-                <label for="Operating_Hours">Operating Hours:</label>
-                <input type="text" class="form-control" id="Operating_Hours" name="Operating_Hours">
+                <label for="EventType">Event Type:</label>
+                <input type="text" class="form-control" id="EventType" name="EventType">
             </div>
             <div class="form-group">
-                <label for="CManager_Id">Clinic Manager ID:</label>
-                <input type="number" class="form-control" id="CManager_Id" name="CManager_Id">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-    <div class="container mt-5 mb-5">
-        <h2>Close Clinic</h2>
-        <form action="Controllers/CloseClinic.php" method="post">
-            <div class="form-group">
-                <label for="ClinicNo">Clinic Number:</label>
-                <input type="number" class="form-control" id="ClinicNo" name="ClinicNo">
+                <label for="EventDate">Event Date:</label>
+                <input type="date" class="form-control" id="EventDate" name="EventDate">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

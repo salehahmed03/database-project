@@ -2,7 +2,6 @@
 <div class="sidebar">
   <ul class="list-unstyled">
     <li class="sidebar-item"><a href="Staff.php">Staff</a></li>
-    <li><a href="Clinic.php">Clinic</a></li>
     <li>
       <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Visitors</a>
       <ul class="collapse list-unstyled" id="submenu1">
@@ -33,6 +32,13 @@
         <li><a href="Supplies.php">Supplies</a></li>
         <li><a href="Supplier.php">Supplier</a></li>
         <li><a href="Supplier_Phone.php">Supplier phone</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#submenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Clinic</a>
+      <ul class="collapse list-unstyled" id="submenu5">
+        <li><a href="Clinic.php">Clinic</a></li>
+        <li><a href="Goes_To.php">Goes_To</a></li>
       </ul>
     </li>
 </div>
