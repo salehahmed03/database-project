@@ -104,6 +104,149 @@ if ($result_data) {
     </form>
 </div>
 
+<div class="container mt-5 mb-5">
+        <h2>Fire Staff Form</h2>
+        <form action="Controllers/FireStaff.php" method="post">
+            <div class="form-group">
+                <label for="input_id">Input ID:</label>
+                <input type="number" class="form-control" name="input_id" id="input_id" required>
+            </div>
+
+            <button type="submit" class="btn btn-danger">Fire Staff</button>
+        </form>
+    </div>
+    <div class="container mt-5 mb-5">
+        <h2>Add Employee Form</h2>
+        <form action="Controllers/HireStaff.php" method="post">
+            <div class="form-group">
+                <label for="Manager_ID">Manager ID:</label>
+                <input type="number" class="form-control" name="Manager_ID" id="Manager_ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Clinic_NO">Clinic Number:</label>
+                <input type="number" class="form-control" name="Clinic_NO" id="Clinic_NO" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Exhibit_NO">Exhibit Number:</label>
+                <input type="number" class="form-control" name="Exhibit_NO" id="Exhibit_NO" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Shop_NO">Shop Number:</label>
+                <input type="number" class="form-control" name="Shop_NO" id="Shop_NO" required>
+            </div>
+
+            <div class="form-group">
+                <label for="SSN">SSN:</label>
+                <input type="text" class="form-control" name="SSN" id="SSN" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Fname">First Name:</label>
+                <input type="text" class="form-control" name="Fname" id="Fname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Mname">Middle Name:</label>
+                <input type="text" class="form-control" name="Mname" id="Mname">
+            </div>
+
+            <div class="form-group">
+                <label for="Lname">Last Name:</label>
+                <input type="text" class="form-control" name="Lname" id="Lname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Address">Address:</label>
+                <input type="text" class="form-control" name="Address" id="Address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <input type="email" class="form-control" name="Email" id="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Salary">Salary:</label>
+                <input type="number" step="0.01" class="form-control" name="Salary" id="Salary" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Gender">Gender:</label>
+                <select class="form-control" name="Gender" id="Gender" required>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="O">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Role">Role:</label>
+                <input type="text" class="form-control" name="Role" id="Role" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Joining_Date">Joining Date:</label>
+                <input type="date" class="form-control" name="Joining_Date" id="Joining_Date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Birth_Date">Birth Date:</label>
+                <input type="date" class="form-control" name="Birth_Date" id="Birth_Date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Working_Hours">Working Hours:</label>
+                <input type="text" class="form-control" name="Working_Hours" id="Working_Hours" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Employee</button>
+        </form>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h2>Transfer Staff Form</h2>
+        <form action="Controllers/TransferStaff.php" method="post">
+            <div class="form-group">
+                <label for="staff_id">Staff ID:</label>
+                <input type="number" class="form-control" name="staff_id" id="staff_id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="new_location_no">New Location Number:</label>
+                <input type="number" class="form-control" name="new_location_no" id="new_location_no" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Transfer Staff</button>
+        </form>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h2>Promote Staff Form</h2>
+        <form action="Controllers/PromoteStaff.php" method="post">
+            <div class="form-group">
+                <label for="staff_id">Staff ID:</label>
+                <input type="number" class="form-control" name="staff_id" id="staff_id" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Promote Staff</button>
+        </form>
+    </div>
+    <div class="container mt-5 mb-5">
+        <h2>Get Staff Role Form</h2>
+        <form action="Controllers/GetStaffRole.php" method="post">
+            <div class="form-group">
+                <label for="staff_id">Staff ID:</label>
+                <input type="number" class="form-control" name="staff_id" id="staff_id" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Get Staff Role</button>
+        </form>
+    </div>
+
+
 
     </body>
     </html>
