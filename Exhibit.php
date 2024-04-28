@@ -114,9 +114,21 @@ if ($result_data) {
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-                </main>
+    <div class="container mt-5 mb-5">
+        <h2>Exhibit Animals Form</h2>
+        <form action="Controllers/get_exhibit_animals.php" method="post">
+            <div class="form-group">
+                <label for="exhibit_no">Exhibit Number:</label>
+                <input type="number" class="form-control" name="exhibit_no" id="exhibit_no" required>
             </div>
-        </div>
+
+            <button type="submit" class="btn btn-primary">Get Exhibit Animals</button>
+        </form>
+    </div>
+   </main>
+ </div>
+</div>
+        
     
     </body>
     </html>
