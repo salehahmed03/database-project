@@ -1,6 +1,6 @@
 <?php
-$serverName = "DESKTOP-BUS0U02";
-$connectionInfo = array( "Database"=>"ZooDBMS");
+$serverName = "DESKTOP-HN84Q47";
+$connectionInfo = array( "Database"=>"ZooDBMS", "TrustServerCertificate"=>"true");
 $conn = sqlsrv_connect( $serverName, $connectionInfo);
 
 if( $conn ) {

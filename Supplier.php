@@ -66,9 +66,66 @@ if ($result_data) {
                             </tbody>
                         </table>
                     </div>
+                    <div class="container" mt-5 mb-5>
+        <h2>Add Equipment Supplier</h2>
+        <form action="Controllers/OrderEquipment.php" method="post">
+            <div class="form-group">
+                <label for="Company_Name">Company Name:</label>
+                <input type="text" class="form-control" id="Company_Name" name="Company_Name">
+            </div>
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <input type="email" class="form-control" id="Email" name="Email">
+            </div>
+            <div class="form-group">
+                <label for="Phone_No">Phone Number:</label>
+                <input type="text" class="form-control" id="Phone_No" name="Phone_No">
+            </div>
+            <div class="form-group">
+                <label for="Clinic_No">Clinic Number:</label>
+                <input type="number" class="form-control" id="Clinic_No" name="Clinic_No">
+            </div>
+            <div class="form-group">
+                <label for="Quantity">Quantity:</label>
+                <input type="number" class="form-control" id="Quantity" name="Quantity" value="1">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="container" mt-5 mb-5>
+        <h2>Add Food Supplier</h2>
+        <form action="Controllers/OrderFood.php" method="post">
+            <div class="form-group">
+                <label for="Company_Name">Company Name:</label>
+                <input type="text" class="form-control" id="Company_Name" name="Company_Name">
+            </div>
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <input type="email" class="form-control" id="Email" name="Email">
+            </div>
+            <div class="form-group">
+                <label for="Phone_No">Phone Number:</label>
+                <input type="text" class="form-control" id="Phone_No" name="Phone_No">
+            </div>
+            <div class="form-group">
+                <label for="Food_Type">Food Type:</label>
+                <input type="text" class="form-control" id="Food_Type" name="Food_Type">
+            </div>
+            <div class="form-group">
+                <label for="Exhibit_No">Exhibit Number:</label>
+                <input type="number" class="form-control" id="Exhibit_No" name="Exhibit_No">
+            </div>
+            <div class="form-group">
+                <label for="Quantity">Quantity:</label>
+                <input type="text" class="form-control" id="Quantity" name="Quantity" value="100kg">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
                 </main>
             </div>
         </div>
+
     </body>
     </html>
     <?php
