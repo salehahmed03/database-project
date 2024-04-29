@@ -1,6 +1,7 @@
 <?php
 // Include database connection file
 include '../include/db_connection.php';
+include '../include/scripts.php';
 
 // Check if form is submitted and staff_id is set
 if (isset($_POST['staff_id'])) {
@@ -13,12 +14,18 @@ if (isset($_POST['staff_id'])) {
     $result = sqlsrv_query($conn, $query, $params);
 
     // Check if query execution was successful
+    
     if ($result) {
-        // Fetch the role from the result set
-        $row = sqlsrv_fetch_array($result);
-        $role = $row['role'];
-        header("Location:../Staff.php");
-        exit();
+        // Fetch each row from the result set
+        while ($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
+            // Print the row in a Bootstrap alert message
+            echo '<div class="alert alert-success" role="alert">';
+            echo implode("",$row);
+            echo '</div>';
+        }
+    
+    
+
     } else {
         // Error handling
         $errors = sqlsrv_errors();
