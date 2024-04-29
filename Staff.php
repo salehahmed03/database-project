@@ -33,7 +33,7 @@ if ($result_data) {
         <div class="container-fluid">
             <div class="row">
                 <?php include 'include/sidebar.php'; ?>
-                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4" style="margin-left: 280px !important;">
                     <h2>Staff Table</h2>
                     <div class="table-responsive">
                         <table class="table table-bordered border-primary mt-5">
@@ -66,11 +66,7 @@ if ($result_data) {
                             </tbody>
                         </table>
                     </div>
-                </main>
-            </div>
-        </div>
-
-        <div class="container mt-5 mb-5">
+                    <div class="container mt-5 mb-5">
     <h2>Raise</h2>
     <form action="Controllers/SalaryRaise.php" method="post">
         <div class="form-group">
@@ -245,6 +241,11 @@ if ($result_data) {
             <button type="submit" class="btn btn-primary">Get Staff Role</button>
         </form>
     </div>
+                </main>
+            </div>
+        </div>
+
+        
 
 
 

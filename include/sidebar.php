@@ -17,7 +17,7 @@
         <li><a href="Sponsor_Area_Aqcuired.php">Sponsors Area</a></li>
       </ul>
   
-    <li><a href="Animal.php">Animals</a></li>
+    
     <li><a href="Exhibit.php">Exhibits</a></li>
     <li>
       <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Animal</a>
