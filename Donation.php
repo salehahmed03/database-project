@@ -66,6 +66,16 @@ if ($result_data) {
                             </tbody>
                         </table>
                     </div>
+                    <div class="container mt-5 mb-5">
+    <h2>Total Donations in Location</h2>
+    <form action="Controllers/GetTotalDonationsInLocation.php" method="post">
+        <div class="form-group">
+            <label for="Location">Location:</label>
+            <input type="text" class="form-control" name="Location" id="Location" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Get Total Donations</button>
+    </form>
+</div>
                 </main>
             </div>
         </div>

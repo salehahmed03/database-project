@@ -110,6 +110,16 @@ if ($result_data) {
         <button type="submit" class="btn btn-danger">Remove Shop</button>
     </form>
 </div>
+<div class="container mt-5 mb-5">
+    <h2>Shop Revenue</h2>
+    <form action="Controllers/GetShopRevenue.php" method="post">
+        <div class="form-group">
+            <label for="ShopNo">Shop Number:</label>
+            <input type="number" class="form-control" name="ShopNo" id="ShopNo" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Get Shop Revenue</button>
+    </form>
+</div>
                 </main>
             </div>
         </div>

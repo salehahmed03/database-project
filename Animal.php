@@ -210,6 +210,22 @@ if ($result_data) {
             <button type="submit" class="btn btn-primary">Treat Animal</button>
         </form>
     </div>
+    <div class="container mt-5 mb-5">
+    <h2>Release Animal Form</h2>
+    <form action="Controllers/ReleaseAnimal.php" method="post">
+        <div class="form-group">
+            <label for="AnimalId">Animal ID:</label>
+            <input type="number" class="form-control" name="AnimalId" id="AnimalId" required>
+        </div>
+        <button type="submit" class="btn btn-danger">Release Animal</button>
+    </form>
+</div>
+<div class="container mt-5 mb-5">
+    <h2>Animals in Family Tree</h2>
+    <form action="Controllers/GetAnimalsinFamilyTree.php" method="post">
+        <button type="submit" class="btn btn-primary">Get Animals</button>
+    </form>
+</div>
                 </main>
             </div>
         </div>
