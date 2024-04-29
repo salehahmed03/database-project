@@ -58,3 +58,8 @@
 }.content-container {
   margin-top: 150px; 
 }
+.table-responsive {
+  max-width: 95%; /* Adjust the maximum width as needed */
+  margin: 20px auto; /* Center the table horizontally */
+}
+
