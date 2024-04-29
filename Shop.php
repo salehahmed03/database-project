@@ -74,13 +74,7 @@ if ($result_data) {
                             </tbody>
                         </table>
                     </div>
-                </main>
-            </div>
-        </div>
-    </body>
-    </html>
-
-    <div class="container mt-5 mb-5">
+                    <div class="container mt-5 mb-5">
         <h2>Add Shop Form</h2>
         <form action="Controllers/AddShop.php" method="post">
             <div class="form-group">
@@ -106,6 +100,23 @@ if ($result_data) {
             <button type="submit" class="btn btn-primary">Add Shop</button>
         </form>
     </div>
+    <div class="container mt-5 mb-5">
+    <h2>Remove Shop Form</h2>
+    <form action="Controllers/RemoveShop.php" method="post">
+        <div class="form-group">
+            <label for="ShopNo">Shop Number:</label>
+            <input type="number" class="form-control" name="ShopNo" id="ShopNo" required>
+        </div>
+        <button type="submit" class="btn btn-danger">Remove Shop</button>
+    </form>
+</div>
+                </main>
+            </div>
+        </div>
+    </body>
+    </html>
+
+    
    
     <?php
 } else {

@@ -1,5 +1,6 @@
 <?php
 // Include database connection file
+include '../include/scripts.php';
 include '../include/db_connection.php';
 
 // Check if form is submitted and visitor_ticket is set
@@ -19,11 +20,13 @@ if (isset($_POST['visitor_ticket'])) {
             // Display the retrieved donations
             echo "<h2>Visitor Donations</h2>";
             echo "<table class='table table-bordered'>";
-            echo "<thead><th>Visitor Ticket</th><th>Amount</th></tr></thead>";
+            echo "<thead><tr><th>Visitor Ticket</th><th>Location</th><th>Date</th><th>Amount</th></tr></thead>";
             echo "<tbody>";
             while ($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
                 echo "<tr>";
                 echo "<td>" . $row['Visitor_Ticket'] . "</td>";
+                echo "<td>" . $row['Location'] . "</td>";
+                echo "<td>" . $row['Date']->format('Y-m-d') . "</td>";
                 echo "<td>" . $row['Amount'] . "</td>";
                 echo "</tr>";
             }

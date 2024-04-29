@@ -68,12 +68,7 @@ if ($result_data) {
                             </tbody>
                         </table>
                     </div>
-                </main>
-            </div>
-        </div>
-
-    </div>
-    <div class="container mt-5 mb-5">
+                    <div class="container mt-5 mb-5">
         <h2>Add Info Form</h2>
         <form action="Controllers/AddAnimal.php" method="post">
             <div class="form-group">
@@ -215,6 +210,12 @@ if ($result_data) {
             <button type="submit" class="btn btn-primary">Treat Animal</button>
         </form>
     </div>
+                </main>
+            </div>
+        </div>
+
+    </div>
+    
 
 
     </body>
